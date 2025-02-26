@@ -1,0 +1,428 @@
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Black+Han+Sans&family=Do+Hyeon&family=Gasoek+One&family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Kumar+One&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Nanum+Pen+Script&family=Nothing+You+Could+Do&family=Noto+Sans+KR:wght@100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Pacifico&display=swap');
+
+@font-face {
+  font-family: 'Pretendard-Regular';
+  src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+.inknut-antiqua-regular {
+  font-family: "Inknut Antiqua", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.inknut-antiqua-bold {
+  font-family: "Inknut Antiqua", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.do-hyeon-regular {
+  font-family: "Do Hyeon", serif;
+  font-style: normal;
+}
+
+.noto-sans-kr {
+  font-family: "Noto Sans KR", serif;
+}
+
+body {
+  font-family: 'Pretendard-Regular';
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.wrap {
+  padding: 24px;
+}
+
+header {
+  max-width: 1600px;
+  height: 80px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+  align-items: center;
+}
+
+header .app-tit {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header .app-tit>img {
+  max-width: 100%
+}
+
+.weather-box {
+  max-width: 1600px;
+  margin: auto;
+  text-align: center;
+  align-items: center;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  gap: 48px;
+}
+
+.weather_i {
+  width: 70%;
+}
+
+.location-weather {
+  width: 100%;
+  padding: 16px;
+}
+
+.location-weather .date {
+  text-align: start;
+  padding-left: 16px;
+  margin-bottom: 16px;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.location_i {
+  width: 100%;
+  display: flex;
+  gap: 16px;
+  margin-bottom: 32px;
+}
+
+.location-mainbox {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  border-radius: 30px;
+  background-color: #72C79A;
+  margin-bottom: 32px;
+  font-family: 'Pretendard-Regular';
+}
+
+.location-mainbox .left {
+  display: flex;
+  flex-direction: column;
+}
+
+.location-name {
+  font-family: "Do Hyeon", serif;
+  font-size: 48px;
+}
+
+.location-temp {
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.left-b {
+  display: flex;
+  flex-direction: column;
+  margin-top: 32px;
+  gap: 24px;
+}
+
+.detail {
+  width: 70%;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 24px;
+  align-content: center;
+  border-radius: 30px;
+  background-color: #C7E6CF;
+}
+.sky-condition{
+  font-family: 'Do Hyeon';
+  font-size: 18px;
+}
+
+.other-weather {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.hour-weather {
+  width: 100%;
+  height: 160px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #FBF19F;
+  border-radius: 30px;
+}
+
+.mySwiper.hour-weather-2 {
+  display: none;
+}
+
+.hour {
+  width: 100%;
+  padding: 32px;
+}
+
+.hour>img {
+  display: inline-block;
+}
+
+.week-weather{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.week-weather_i{
+  width: 100%;
+  height: 160px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #72C79A;
+  border-radius: 30px;
+}
+.week-data{
+  width: 100%;
+  height: 100%;
+  padding: 32px;
+}
+.week-data img{
+  display: inline-block;
+}
+.mySwiper.week-weather_i-2{
+ display: none;
+}
+
+.searchcity-box {
+  width: 30%;
+  height: 750px;
+  position: relative;
+  background-color: #C9DFB5;
+  border-radius: 30px;
+}
+
+.searchcity-box>input {
+  width: 80%;
+  height: 25px;
+  margin-top: 16px;
+  text-align: center;
+  background-color: inherit;
+  border: none;
+  border-bottom: 1px solid #000;
+}
+
+.city-weather {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-top: 10rem;
+}
+
+.main_info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+.city-temp{
+  font-size: 20px;
+  font-weight: 600;
+}
+.city-sky-condition{
+  font-family: 'Do Hyeon';
+  font-size: 18px;
+}
+.sub_info{
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.city_i {
+  width: 50%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: center;
+  position: absolute;
+  left: 50%;
+  top: 40%;
+  transform: translate(-50%, 40%);
+}
+
+.cityname {
+  font-family: "Do Hyeon", serif;
+}
+
+.emoji {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+
+
+@media screen and (max-width: 1200px){
+  .searchcity-box{
+    width: 60%;
+  }
+ .location-mainbox{
+  padding: 32px;
+ }
+ .week-weather_i{
+  display: none;
+}
+.mySwiper.week-weather_i-2{
+  display: block;
+  width: 100%;
+  height: 160px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #72C79A;
+  border-radius: 30px;
+  align-items: center;
+}
+.week-data-2{
+  padding: 24px;
+  }
+  .week-weather_i-2 img{
+    display: inline-block;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .weather-box {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .location-weather {
+    width: 100%;
+  }
+
+  .searchcity-box {
+    height: 600px;
+    padding: 24px;
+  }
+  .city-weather {
+    margin-top: 32px;
+  }
+  .searchcity-box>input {
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (max-width: 1020px){
+  .location-name{
+    font-size: 36px;
+  }
+  .location-temp{
+    font-size: 24px;
+  }
+  .hour-weather {
+    display: none;
+  }
+
+  .mySwiper.hour-weather-2 {
+    display: block;
+    width: 100%;
+    height: 160px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #FBF19F;
+    border-radius: 30px;
+  }
+
+  .hour-2 {
+    padding: 24px;
+  }
+
+  .icon {
+    display: inline-block;
+  }
+  h2{
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .location_i {
+    flex-direction: column;
+  }
+  .location-mainbox{
+    margin-bottom: 0;
+  }
+  .detail {
+    width: 100%;
+    height: 160px;
+    gap: 8px;
+    margin-bottom: 24px;
+  }
+  .other-weather {
+    margin-top: 24px;
+  }
+  .searchcity-box>input {
+    margin-bottom: 2em;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .other-weather {
+    margin-top: 24px;
+  }
+
+  .location-name {
+    font-size: 32px;
+  }
+
+  .location-temp {
+    font-size: 24px;
+  }
+  .mySwiper .week-weather_i-2{
+    display: block;
+    width: 100%;
+    height: 160px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #FBF19F;
+    border-radius: 30px;
+  }
+}
+
+@media screen and (max-width: 480px){
+  .weather_i{
+    width: 100%;
+  }
+  .location-weather .date {
+    text-align: center;
+    padding-left: 16px;
+    margin-bottom: 16px;
+    font-size: 16px;
+    font-weight: 700;
+  }
+  .searchcity-box{
+    width: 100%;
+  }
+}
